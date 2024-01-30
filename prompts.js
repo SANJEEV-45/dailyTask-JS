@@ -11,7 +11,7 @@ console.log(avail);
   if u click OK it returns true 
   if u click CANCEL it returns False
 */
-let user = confirm("Enable the data user");
+let user = confirm("Enable the less data usage");
 console.log(typeof(user))//boolean type
 
 //prompt

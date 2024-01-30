@@ -38,4 +38,3 @@ let isValid = true;
 console.log(typeof(isValid));
 console.log(typeof(String(isValid)));// Boolean converted to String using string operator
 
-//Hoisting (Calling a variable before declaration)
