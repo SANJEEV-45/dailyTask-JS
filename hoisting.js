@@ -18,6 +18,6 @@ function addNumber2() {
 
 //Temporal Dead Zone
 /* It is a time between variable declartaion and initializtion */
-let age;g
+let age; g
 
 age = 23;

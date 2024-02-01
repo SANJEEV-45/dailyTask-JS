@@ -50,14 +50,14 @@ let str_3 = str_1.repeat(3);
 console.log(str_3); // this method returnds a no of copies in string and it doesn't modify the original string.
 
 //replace(Case-sensitive)
-let newLine = str.replace("world","Venus");
+let newLine = str.replace("world", "Venus");
 console.log(newLine); //Hello Venus
 /* It will replace the first occurence in a sentence, if u wanna replace with all 
    words what u gave, u should use regression orelse we use replaceAll instead of regression */
 
 //replaceAll
 let LINE = "Cats are Domestic, We love Cats , Cats eats chicken";
-console.log(LINE.replaceAll("Cats","Dogs"));
+console.log(LINE.replaceAll("Cats", "Dogs"));
 
 //indexof
 let temp = LINE.indexOf("Cats"); //This method returns the index of the first occurence or return -1 if the string is not found.

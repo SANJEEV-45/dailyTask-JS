@@ -22,13 +22,13 @@ console.log(Name);
 //let 
 let myAge;//Declaration is allowed
 console.log(myAge);
-myAge=23; //Initialization
-console.log(myAge); 
+myAge = 23; //Initialization
+console.log(myAge);
 myAge = 22; //Re-initialization is possible
 // let myAge; //Re-declaration is not possible
 
 //const
-const MY_COUNTRY="INDIA"
+const MY_COUNTRY = "INDIA"
 // MY_COUNTRY="ITALY"; 
 console.log(MY_COUNTRY); //Re-initialization and re-declaration is not possible
 
@@ -38,8 +38,7 @@ console.log(MY_COUNTRY); //Re-initialization and re-declaration is not possible
 //Global
 let myBlood = "O+"; //Global scope
 
-function bloodInfo()
-{
+function bloodInfo() {
     let myBlood = "A+"; //Block scope(Local)
     /* U can't access the local var outside the block */
     console.log(`My blood group is ${myBlood}`);
@@ -49,11 +48,10 @@ bloodInfo();
 //var vs let
 let temp = "This is from outside scope";
 
-function checkBlock()
-{
-    var str="Hi this is from var type";
-    let str2="Hi this is from let type";
-    for(i=0 ; i<10; i++) //If we didn't use any variable for the identifier, it will consider as var type.
+function checkBlock() {
+    var str = "Hi this is from var type";
+    let str2 = "Hi this is from let type";
+    for (i = 0; i < 10; i++) //If we didn't use any variable for the identifier, it will consider as var type.
     {
         console.log(str + i);
     }
@@ -64,5 +62,5 @@ console.log(i);// U can access the var type outside the block
 
 randomDraw;
 console.log(randomDraw);// This will get error for not prefixed with any type of variables.
-randomDraw=15;// If we didn't prefix any variable and assigned value to a identifier it will consider as a var type.
+randomDraw = 15;// If we didn't prefix any variable and assigned value to a identifier it will consider as a var type.
 console.log(randomDraw);// It does print.

@@ -12,7 +12,7 @@ console.log(avail);
   if u click CANCEL it returns False
 */
 let user = confirm("Enable the less data usage");
-console.log(typeof(user))//boolean type
+console.log(typeof (user))//boolean type
 
 //prompt
 let userAccess = prompt("Enter the number you want");
