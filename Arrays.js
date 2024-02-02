@@ -65,7 +65,7 @@ const numbers = [45, 4, 9, 16, 25];
 let sum = numbers.reduce(myFunction);
 console.log(sum);
 
-function myFunction(total, value, index, array) {
+function myFunction(total, value) {
   return total + value;
 }
 
@@ -75,3 +75,28 @@ let sum2 = numbers.reduceRight(myFunction);
 function myFunction(total, value, index, array) {
   return total + value;
 }
+
+//for each
+const details = [
+  { Name: "Sanjeev", Age: 21, Place: "chennai", Salary: 10000 },
+  { Name: "Rohit", Age: 22, Place: "Covai", Salary: 12000 },
+  { Name: "Rishi", Age: 22, Place: "Bangalore", Salary: 10000 },
+  { Name: "Sriram", Age: 23, Place: "Bangalore", Salary: 11000 },
+  { Name: "Thiru", Age: 20, Place: "Trichy", Salary: 10000 },
+];
+
+details.forEach((values) => {
+  console.log(values.Name + " - " + values.Age);
+});
+
+//map
+const Eligiblity = details.map((value) => ({
+  Name: value.Name,
+  Salary: value.Salary,
+  Eligible: value.Age > 21 ? "Eligible" : "Not eligible",
+}));
+
+console.table(Eligiblity);
+console.log(numbers.sort((a, b) => {
+  return b - a;
+}));
